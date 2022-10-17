@@ -1,0 +1,1726 @@
+@charset "utf-8";
+/* CSS Document for Nitro Gear & Axle*/
+
+@font-face {
+  font-family: "Neutra";
+  src: url("neutra-font/NeutraText-Book.eot");
+  src: local("neutra-font/NeutraText-Book.eot"),
+    url("neutra-font/NeutraText-Book.woff") format("woff"),
+    url("neutra-font/NeutraText-Book.ttf") format("truetype"),
+    url("neutra-font/NeutraText-Book.svg") format("svg"),
+    url("neutra-font/NeutraText-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Neutra";
+  src: url("neutra-font/NeutraText-Bold.eot");
+  src: local("neutra-font/NeutraText-Bold.eot"),
+    url("neutra-font/NeutraText-Bold.woff") format("woff"),
+    url("neutra-font/NeutraText-Bold.ttf") format("truetype"),
+    url("neutra-font/NeutraText-Bold.svg") format("svg"),
+    url("neutra-font/NeutraText-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Neutra";
+  src: url("neutra-font/NeutraText-Light.eot");
+  src: local("neutra-font/NeutraText-Light.eot"),
+    url("neutra-font/NeutraText-Light.woff") format("woff"),
+    url("neutra-font/NeutraText-Light.ttf") format("truetype"),
+    url("neutra-font/NeutraText-Light.svg") format("svg"),
+    url("neutra-font/NeutraText-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("theme-fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("theme-fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+
+@font-face {
+  font-family: 'proxima';
+  src: url("proxima/ProximaNovaCondReg.eot");
+  src: url("proxima/ProximaNovaCondReg.woff") format("woff"),
+    url("proxima/ProximaNovaCondReg.ttf") format("truetype"),
+    url("proxima/ProximaNovaCondReg.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeutraTitling";
+  src: url("theme-fonts/NeutraDisp-Titling.eot");
+  src: local("NeutraTitling"),
+    url("theme-fonts/NeutraDisp-Titling.woff") format("woff"),
+    url("theme-fonts/NeutraDisp-Titling.ttf") format("truetype"),
+    url("theme-fonts/NeutraDisp-Titling.svg") format("svg"),
+    url("theme-fonts/NeutraDisp-Titling.otf") format("opentype");
+  font-weight: 900;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "NeutraDemiSC";
+  src: url("theme-fonts/NeutraText-DemiSC.eot");
+  src: local("NeutraText-Book.eot"),
+    url("neutra-font/NeutraText-DemiSC.woff") format("woff"),
+    url("neutra-font/NeutraText-DemiSC.ttf") format("truetype"),
+    url("neutra-font/NeutraText-DemiSC.svg") format("svg"),
+    url("neutra-font/NeutraText-DemiSC.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeutraBoldSC";
+  src: url("neutra-font/NeutraBoldSC.eot");
+  src: local("NeutraBoldSC"),
+    url("neutra-font/NeutraText-BoldSC.woff") format("woff"),
+    url("neutra-font/NeutraText-BoldSC.ttf") format("truetype"),
+    url("neutra-font/NeutraText-BoldSC.svg") format("svg"),
+    url("neutra-font/NeutraText-BoldSC.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family:"NeutraBookSC";
+  src: url(neutra-font/NeutraText-BookSCAlt.eot);
+  src: url(neutra-font/NeutraText-BookSCAlt.eot?#iefix) format('embedded-opentype'),
+       url(neutra-font/NeutraText-BookSCAlt.ttf) format('truetype'),
+       url(neutra-font/NeutraText-BookSCAlt.woff) format('woff'),
+       url(neutra-font/NeutraText-BookSCAlt.woff2) format('woff2'),
+       url(neutra-font/NeutraText-BookSCAlt.svg#NeutraText-BookSCAlt) format('svg'),
+       url(neutra-font/NeutraText-BookSCAlt.otf) format('otf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*partsLogic*/
+ul[class*=facetFilter_list] li.Sui-facet-section--Availability>h2>span {
+    font-size: 0;
+    font: normal normal 600 1.5rem/1.5rem "NeutraBoldSC";
+}
+ul[class*=facetFilter_list] li.Sui-facet-section--Availability>h2>span:before {
+    content: "-";
+    font-size: 1.5rem;
+}
+
+#pl-search-page-container li[class*=Sui-facet-section] h2, .Sui-modal li[class*=Sui-facet-section] h2 {
+    background: linear-gradient(1800deg,#555,#000)!important;
+    border-bottom: 2px solid #c00;
+    border-radius: 20px 0 0;
+    line-height: initial;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+	color: #fff!important;
+}
+
+ #pl-search-page-container li[class*=Sui-facet-section] h2 span, .Sui-modal li[class*=Sui-facet-section] h2 span {
+    color: #fff!important;
+    font: normal normal 600 1.5rem/1.5rem "NeutraBoldSC"!important;
+}
+
+/*end partsLogic*/
+html, body {
+    font-family: 'proxima';
+}
+nav.tm-navigation .megamenu-wrapper .level1 > li > a {
+  margin-bottom: 0px;
+  font-family: "Neutra";
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.nav-sections{
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 50%, rgba(0,0,0,1) 100%);
+	
+}
+.tel-number{color: #cc0000;
+    font-family: "NeutraTitling";
+}
+.maga-menu-title span{  
+font-family: "NeutraBoldSC";
+}
+.page-header .nav-sections .navigation .level0 span {
+    font-family: "NeutraTitling"!important;
+}
+
+.authorization-link .not-login{
+	font: normal normal 900 12px/18px "NeutraTitling",sans-serif;
+    padding: 10px 12px;
+}
+.form-cart .item-info .product-name .product-item-name {
+    font: normal normal 700 18px/23px "Neutra";
+  }
+
+.products-grid .product-items .product-item .product-inner-item .grid-product-bottom-inner {
+    padding: 10px 12px;
+    background-color: #f0f0f0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #cc0000;
+	transition: 0.3s ease;
+}
+
+  .breadcrumbs {
+    padding: 20px 10px;
+    margin: auto;
+  }
+  .layered-filter-block-container {
+    border-right: 1px solid #E8E8E8;
+  }
+  .catalog-category-view .columns {
+    border-top: 1px solid #E8E8E8;
+  }
+  .sorter select,
+  .limiter select {
+    padding-left: 15px;
+    padding-right: 30px;
+    background-position: right 16px center;
+  }
+  .limiter select {
+    min-width: 90px;
+
+  }
+.product-item .action.primary {
+    padding: 10px 16px;
+    text-transform: capitalize;
+    font-size: 12px;
+    box-shadow: none;
+}
+    .popular-categories .popular-categories-inner {
+    background: #FFFFFF;
+    margin-bottom: 30px!important;
+    padding: 30px;
+    border-radius: 10px;
+  
+}
+  .sorter select {
+    min-width: 163px;
+  }
+  .page-layout-2columns-left .column.left {
+    width: 20%;
+  }
+  .page-footer h4 {
+    /*font-size: 20px;*/
+	  font: normal 700 20px/23px "Neutra";
+	  
+  }
+
+body {
+  color: #070707;
+  font-family: 'proxima';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.36363636;
+  font-size: 1.4rem;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small {
+  color: #333333;
+  font-family: "Neutra";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+blockquote {
+  border-left: 0 solid #e2e2e2;
+  margin: 0 0 19px 38px;
+  padding: 0;
+  color: #3a2d3e;
+  font-family: "Neutra";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.36363636;
+  font-size: 1.4rem;
+}
+.finderform select {
+    background: #ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA69pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InV1aWQ6NjNBQTA3MjY4ODM0RTYxMUI4MTI5QjVBMzE5RjBEMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjA5NzY3RjdDMzk0MTFFNzlBNkNBQkExNUZDQkZEM0UiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjA5NzY3RjZDMzk0MTFFNzlBNkNBQkExNUZDQkZEM0UiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMjJBRTI3Qjg0QjlFNzExQjVBN0UyNTIyRjIyRjczMCIgc3RSZWY6ZG9jdW1lbnRJRD0idXVpZDo2M0FBMDcyNjg4MzRFNjExQjgxMjlCNUEzMTlGMEQxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlEazA0AAABVSURBVHjaYhQREXFhYGDYw0AYuDABiXIgDiWgcDcQC7IACVcoBwRW41A4CyTHAhXApQGuEMRhQZJA14CiEAQYgR7E6j4g7kR3FgsWN4JswBpCAAEGAKcvEa9lkTMAAAAAAElFTkSuQmCC) no-repeat right 13px center;
+    background-clip: padding-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 0;
+    font-family: SF Pro;
+    font-size: 18px;
+    height: 40px;
+    line-height: 1.36363636;
+    padding: 4.75px 25px 4.75px 9.5px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+}
+.headings {
+    font-family: "NeutraTitling";
+}
+
+.tm-navigation .ui-corner-all .ui-menu-item .level-top span {
+    font-family: "NeutraTitling";
+}
+
+.nitro-manu-container a span {
+    font-size: 12px !important;
+     font-family: "NeutraTitling";
+}
+.section-3 .choose .grids{
+	border: 1px solid #ededed;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: -5px;
+    padding: 5% 3%;
+    width: 20%;
+ 
+}
+.image-caption {
+    color: #000000;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    display: none!important;
+}
+.call-us {
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 500;
+    display: none!important;
+}
+
+.detailed-tabs-ds .tabs-ds .tabs-ds-nav li .menu-tab-ds {
+    border: 1px solid #000000;
+    padding: 15px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.project-image-container .heading {
+    margin-bottom: 30px;
+    color: #cc0000;
+    font: normal normal 900 30px/30px "NeutraTitling";
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.breadcrumbs .item:last-child {
+    color: #333;
+    /* text-transform: capitalize!important; */
+}
+.breadcrumbs .items .item, .breadcrumbs .items .item a {
+    text-decoration: none;
+    font-family: "NeutraBookSC";
+    color: #222;
+    text-transform: capitalize!important;
+}
+.project-info {
+    border-radius: 20px 0px 20px;
+    overflow: hidden;
+}
+
+.project-image .project-name a {
+    color: #fff;
+}
+.project-image .project-name {
+    font-weight: 800;
+    font-size: 16px;
+    /* background-color: #fff; */
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    background: radial-gradient(#444, #000);
+}
+a.RegularLink.colors_text {
+    font: normal normal 400 12pt/18pt 'proxima';
+    text-transform: none!important;
+}
+span.productnamecolorLARGE.colors_productname {
+   	font: normal normal 600 16pt/18pt "NeutraDemiSC";
+    color: #555;
+    letter-spacing: .05em;
+}
+.column .main .pr-0 h5 {
+    font: normal normal 600 14pt/18pt "NeutraBookSC";
+}
+
+.category-view .category-description p {
+    color: #717171;
+    font: normal normal 500 17px/24px 'proxima';
+    line-height: 1.3;
+	
+}.page-title span.base {
+    font: normal normal 600 24pt/30pt 'NeutraTitling';
+}
+.cms-list-items ul li a{
+	color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.mst-searchautocomplete__autocomplete ul li a.title {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #333;
+    text-decoration: none;
+    font: normal normal 400 16px/16px "proxima";
+}
+
+.mst-searchautocomplete__highlight {
+    font-weight: 600;
+    color: #cc1717;
+}
+.cms-list-items ul li a:hover{
+	text-shadow:0px 0px 3px #cc0000;
+	    color: #000;
+    transtion: .3s ease ;
+}
+.need-help .need-help-content .content-inner p a {
+    color: #cc1717;
+}
+.columns h5 {
+    font: normal normal 800 1.8rem/2rem "NeutraBoldSC";
+}
+.need-help .need-help-content .content-inner h4 {
+    font: normal normal 600 2.2rem/2.4rem 'NeutraBoldSC';
+}
+
+.catalog-product-view .product-info-price .affirm-as-low-as {
+    display: block;
+    font: normal normal 400 13px/18px 'proxima';
+}
+span.affirm-ala-price {
+
+    font: normal normal 900 13px/18px 'proxima';
+    color: #CC1717;
+}
+
+.shipping-option-lable {
+    font: normal normal 600 16px/16px "NeutraBookSC";
+}
+
+.nitro-manu-container ul {
+    margin-top: 8px !important;
+}
+.navigation .level0 .submenu a {
+    display: block;
+    line-height: inherit;
+    color: #222;
+    padding: 1px;
+    font-family: "NeutraDemiSC";
+}
+.navigation .level0 .submenu a:hover, .navigation .level0 .submenu a.ui-state-focus{
+
+    color: #000!important;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #888;
+    transition: .3s ease;
+}
+
+input[type=text], input[type=password], input[type=url], input[type=tel], input[type=search], input[type=number], input[type=datetime], input[type=email] {
+     background: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #e2e2e2;
+    border-radius: 0;
+    font-family: 'proxima';
+    font-size: 16px;
+    height: 48px;
+    line-height: 1.36363636;
+    padding: 0 15px;
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header.content .header-free-shipping {
+    color: #fff;
+    font-weight: 600;
+    font-family: 'proxima';
+}
+.header .customer-account .authorization-link.not-login a {
+    background-color: #cc0000;
+	font: normal normal 900 12px/23px "NeutraTitling";
+}
+.footer .footer-col *+p{ 
+	Margin-top: 15px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'NeutraBoldSC';
+    text-transform: uppercase;
+}
+
+ .mst-search__highlight {
+    background: #ff0;
+    font: normal normal 700 16px/20px "NeutraBoldSC";
+    color: #CC0000;
+}
+
+.filter-current-subtitle:before, .filter-options-title:before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 26px;
+    margin-top: -13px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+}
+/*----PartsLogic-----*/
+.searchBar_styledFitmentContainer__1Y9am{
+	    background: #cc1717;
+    border-radius: 25px!important;
+    font: normal normal 600 15px/12px proxima;
+}
+	input.searchBar_inputStyled__XoO4F {
+    height: 42px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    font: normal normal 600 15px/12px proxima;
+}
+.searchBarSuggestions_clearHistoryBtn__39npD {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #cc1717 !important;
+    padding: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+}
+.searchBar_inputContainerStyled__26B1I{
+ 
+    border: 0;
+    box-shadow: 0;
+}	
+	
+.SuiButton {
+    cursor: pointer;
+    border: none;
+    height: var(--sui-input-height);
+    border-radius: 0px 5px 5px 0px;
+}
+.searchBar_styledButton__gW4GL {
+    width: 25%;
+    height: 42px;
+    font-size: 16px;
+}
+.style_wsmSearchBarModal__UfhZZ .Sui-SearchBar--suggestions-container {
+    overflow-y: auto;
+    position: absolute;
+    max-height: calc(100vh - 120px);
+    border-radius: 5px;
+}
+
+input.searchBar_inputStyled__XoO4F {
+    height: 42px;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    font: normal normal 600 15px/12px proxima;
+    border-radius: 5px 0px 0px 5px;
+}
+.styles_styledNoResults__2In0o {
+    margin: 0;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    background-color: #cc0000 !important;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    border-top: 1px solid #fff !important;
+}
+button.modal_closeBtn__1N3cr.Sui-Modal--close-icon:hover {
+    background: transparent !important;
+    color: #222;
+}
+.SuiButton.primary {
+    background-color: #cc1717 !important;
+	font: normal normal 600 1.75rem/1.75rem "NeutraDemiSC";
+    letter-spacing: .05em;
+	text-transform: none!important;
+}
+.searchPage-module_fitmentButton__3hJfp {
+    cursor: pointer;
+    color: #cc1717;
+    border: 2px solid #cc1717;
+}
+.productListItem_styledSearchResultItem__2xWUG .fitmentSpecific {
+    background: #cc1717;
+    color: #fff;
+}
+
+.listControls_icon__3X_9L.listControls_selected__1We4P {
+    color: #cc1717;
+}
+
+.searchPage-module_modal__3qvYI .Sui-FacetFilter--facet-title, .searchPage-module_root__XOif1 .Sui-FacetFilter--facet-title {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 0;
+    font: normal normal 700 1.5rem/2rem proxima;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+}
+
+.searchPage-module_modal__3qvYI .Sui-FacetSection-checkbox-label, .searchPage-module_root__XOif1 .Sui-FacetSection-checkbox-label {
+    margin: 0.05rem 0;
+    padding: 0.05rem 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font: normal normal 500 1.35rem/1.15rem proxima;
+}
+
+.productListItem_styledSearchResultItem__2xWUG .Sui-ProductListItem--price, .productListItem_styledSearchResultItem__2xWUG .Sui-ProductListItem--sale {
+
+    text-align: right;
+    font: normal normal 900 2rem/2.15rem Neutra;
+}
+
+.productListItem_styledSearchResultItem__2xWUG .red {
+    color: #cc1717;
+    font: normal normal 300 1.5rem/1.15rem proxima !important;
+    display:none;
+}
+.searchPage-module_productList__2cI0i .Sui-ProductListItem--brand_name {
+    font-size: 1.5rem;
+}
+.productListItem_styledSearchResultItem__2xWUG .Sui-ProductListItem--brand_name {
+    font-size: .8rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+.productListItem_styledSearchResultItem__2xWUG .Sui-ProductListItem--tag {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.paginationWithRangeInfo_root__3s--4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: normal normal 400 1.5rem/1.5rem proxima !important;
+}
+
+ul[class*="facetFilter_list"] li.Sui-facet-section--Availability>h2 {
+    background-color: #222 !important;
+    color: #fff;
+}
+input#sui-search-bar-input {
+    margin: 0 !important;
+    border-radius: 3px 0 0 0;
+    border: 1px solid #909090;
+}
+.Sui-modal button.Sui-SearchBar--search-button {
+    background-color: var(--pl-color-primary);
+    border-radius: 0 5px 0 0;
+}
+
+.style_wsmSearchBarModal__UfhZZ .Sui-SearchBar--suggestions-container {
+    overflow-y: auto;
+    position: absolute;
+    max-height: calc(100vh - 120px);
+    border-radius: 0 0 5px 5px;
+}
+
+ul[class*="facetFilter_list"] li.Sui-facet-section--Availability>h2 {
+    background-color: #333 !important;
+    color: #fff;
+}
+
+.searchPage-module_modal__3qvYI .Sui-FacetFilter--facet-title, .searchPage-module_root__XOif1 .Sui-FacetFilter--facet-title {
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+#pl-search-page-container .Sui-ListControls--container {
+    background: #fff;
+    /*Color: #cc1717;
+    border: 1px solid #cc1717;*/
+    border-radius: 25px;
+    font-size: 12px;
+}
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.fitmentSpecific {
+    background: #fff;
+    color: #cc1717;
+    border: 1px solid #cc1717;
+    border-radius: 25px;
+    font-size: 12px;
+}
+#pl-search-page-container li[class*="Sui-facet-section"] button[class*="facetSection_showMoreBtn"], .Sui-modal li[class*="Sui-facet-section"] button[class*="facetSection_showMoreBtn"] {
+    color: #fff !important;
+    background-color: #cc1717 !important;
+    font-size: 1.2rem !important;
+    border-radius: 0px;
+    text-transform: uppercase;
+    float: none;
+    width: 100%;
+}
+.productListItem_styledSearchResultItem__2xWUG.productListItem_vertical__RuKVA.productListItem_root__xLXZA {
+    gap: 0;
+    padding: 10px 22px !important;
+}
+.modal_root__ZRh58 div:first-child {
+    border-radius: 5px 5px 0 0;
+}
+div[class*="searchBar_styledFitmentContainer"] {
+    background-color: #cc1717;
+}
+.productListItem_styledSearchResultItem__2xWUG.productListItem_vertical__RuKVA .Sui-ProductListItem--title {
+    font-size: 1.6rem;
+    font: normal normal 600 1.5rem/1.1rem NeutraBoldSC!important;
+    letter-spacing: -.035em;
+}
+
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.fitmentSpecific {
+    background: #fff!important;
+    color: #cc1717!important;
+    border: 1px solid #cc1717!important;
+    border-radius: 25px!important;
+    font-size: 12px!important;
+}
+.Sui-FacetFilter--expand-collapse-btn {
+    padding: 0 1rem;
+    font-size: .5rem;
+    color: #cc1717!important;
+}
+#pl-search-page-container [class*="searchPage-module_fitmentVerifier"] .Sui-Alert--text {
+    font: normal normal 600 2rem/2rem Proxima !important;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.universal {
+    background: #fff!important;
+    color: #cc1717!important;
+    border: 2px solid #cc1717!important;
+    border-radius: 25px!important;
+    font-size: 12px!important;
+    font: normal normal 600 12px/12px Proxima !important;
+}
+
+.alert_styled__pk_3H.alert_success__3_l1y {
+ border: 1px solid #cc1717;
+}
+ 
+#pl-search-page-container div[class*="searchPage-module_fitmentVerifier"] button{
+margin: 0 5px 0 0;
+    border: 1px solid rgba(255,255,255, .5);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    /* background-color: rgb(0 0 0 / 50%); */
+    color: #fff;
+    background-color: #990000;
+}
+
+#pl-search-page-container [class*="searchPage-module_fitmentVerifier"] {
+    background-color: var(--pl-color-primary);
+    border-color: rgba(204,0,0,.5) !important;
+}
+
+/*----End PartsLogic----*/
+/*input[type=text], input[type=password], input[type=url], input[type=tel], input[type=search], input[type=number], input[type=datetime], input[type=email], select {
+    border-radius: 10px !important;
+    border: 2px solid #cc0000 !important;
+}*/
+
+/*img.lazy.lazy-loaded {
+    max-width: 350px;
+}*/
+
+/*-------------------------------*/
+/*-----------DESKTOP-------------*/
+/*-------------------------------*/
+@media (min-width: 768px){
+	
+	.footer-panel{    background-image: url(https://nitrogearaxle.files.wordpress.com/2017/06/honeycomb-background.png);
+    background-size: cover;
+    border-top: 1px solid #cc0000;
+}
+ .product-info-main .product-options-wrapper .fieldset{
+	border: 0;
+    margin: 0 0 19px !important;
+    padding: 0;
+    letter-spacing: -.31em;
+}
+	.product-info-main .fieldset>.field:not(.choice)>.label{
+    margin-bottom: 5px;
+    color: #333333;
+    font: normal normal 700 16px/16px 'proxima';
+	}
+	
+.select2-container.select2-container--default .select2-selection {
+    height: 36px;
+    padding: 3px 3px;
+    font: normal normal 600 15px/15px proxima;
+    border-radius: 10px !important;
+    border: 2px solid #cc0000!important;
+}
+.fieldset>.field:not(.choice)>.label {
+    float: left !important;
+    text-align: left !important;
+    padding: 3px 0 !important;
+}
+	
+/*	.select2-container.select2-container--default .select2-selection {
+    border: 2px solid #cc0000;
+    height: 46px;
+    padding: 8px 3px;
+    font-size: 16px;
+}*/
+.delears h3 {
+    font: normal normal 900 32px/32px "NeutraTitling";
+    letter-spacing: .07em;
+}
+	
+	.level0 .level-top span {
+    font-size: 14px!important;
+    font-weight: 900;
+}
+.nitro-manu-container .line-head {
+    border-bottom: 3px dotted #d2d2d2;
+    position: relative;
+    top: 31px;
+    left: 0px;
+    width: 100%;
+}
+	
+	.navigation .level0 .submenu a {
+    display: block;
+    line-height: inherit;
+    color: #333;
+    padding: 1px!important;
+}
+	
+	.nitro-manu-container h4 {
+    min-height: 35px;
+}
+	
+	nav.tm-navigation .level0 .megamenu-wrapper {
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: none;
+    top: 25px;
+}
+	
+ .form-cart .item-info .product-name .product-item-name a {
+    font: normal normal 900 18px/23px "NeutraTitling";
+}
+	
+	.navigation .level0 .submenu h4 a {
+    display: block;
+    line-height: inherit;
+    background: "";
+    border: "";
+    color: #333;
+    padding: 1px;
+    letter-spacing: -.01em;
+    font: normal normal 700 17px/18px "NeutraBoldSC";
+}
+	.popular-categories .popular-categories-top .sub-heading{
+	    font-size: 20px;
+    margin-top: 10px;
+    font: normal normal 500 20px/22px 'proxima';
+    display: none;
+}
+	.popular-categories .popular-categories-top .headings{
+	font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .07em;
+	color: #323232;
+}
+	
+.left-content .block-heading {
+    font: normal normal 700 24px/24px "NeutraBoldSC";
+}
+.form-cart .item-info .price-including-tax .price, .form-cart .item-info .price-excluding-tax .price {
+    color: #000;
+    font: normal normal 900 16px/23px "NeutraTitling";
+}
+button {
+  background-image: none;
+  background: #cc0000;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "NeutraDemiSC";
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 23px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+.action.primary:focus,
+.action.primary:active {
+  background: #cc0000;
+  border: 1px solid #cc0000;
+  color: #ffffff;
+}
+.action.primary:hover {
+  background: #cc0000;
+  border: 1px solid #cc0000;
+  color: #ffffff;
+}
+
+.payment-securely .action.primary{
+ 
+    color: #fff;
+    background: #cc0000;
+    border-color: #cc0000;
+}	
+ 
+input[type=text], input[type=password], input[type=url], input[type=tel], input[type=search], input[type=number], input[type=datetime], input[type=email] {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  font-family: 'proxima';
+  font-size: 14px;
+  height: 48px;
+  line-height: 1.36363636;
+  padding: 0 15px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  background: #ffffff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA69pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InV1aWQ6NjNBQTA3MjY4ODM0RTYxMUI4MTI5QjVBMzE5RjBEMTciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjA5NzY3RjdDMzk0MTFFNzlBNkNBQkExNUZDQkZEM0UiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjA5NzY3RjZDMzk0MTFFNzlBNkNBQkExNUZDQkZEM0UiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMjJBRTI3Qjg0QjlFNzExQjVBN0UyNTIyRjIyRjczMCIgc3RSZWY6ZG9jdW1lbnRJRD0idXVpZDo2M0FBMDcyNjg4MzRFNjExQjgxMjlCNUEzMTlGMEQxNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlEazA0AAABVSURBVHjaYhQREXFhYGDYw0AYuDABiXIgDiWgcDcQC7IACVcoBwRW41A4CyTHAhXApQGuEMRhQZJA14CiEAQYgR7E6j4g7kR3FgsWN4JswBpCAAEGAKcvEa9lkTMAAAAAAElFTkSuQmCC) no-repeat right 7px center;
+  background-clip: padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  font-family: 'proxima';
+  font-size: 16px;
+  height: 48px;
+  line-height: 1.36363636;
+  padding: 4.75px 25px 4.75px 9.5px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  font-family: Neutra;
+  font-size: 14px;
+  height: auto;
+  line-height: 1.36363636;
+  margin: 0;
+  padding: 9.5px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.abs-action-addto-product,
+.block-event .slider-panel .slider .item .action.event,
+.bundle-options-container .block-bundle-summary .product-addto-links > .action {
+  background-image: none;
+  background: #cc0000;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Neutra";
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 23px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.block-cart-failed .action.continue,
+.cart-container .form-cart .action.continue {
+  background-image: none;
+  background: #cc0000;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Neutra";
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 23px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 0;
+}
+.action.primary span{
+	
+	font-family: "NeutraTitling"!important;
+}
+.product-options-wrapper input, .product-options-wrapper option {
+    font-family: 'proxima';
+    font-size: 18px;
+}
+.product-options-wrapper input, .product-options-wrapper select {
+    max-width: 400px;
+    font: normal normal 600 15px/15px 'Proxima';
+	border: 2px solid #cc0000;
+    border-radius: 10px!important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+    font: normal normal 600 16px/18px proxima;
+}
+/*	.select2-container.select2-container--default .select2-selection{
+	border: 1px solid #e2e2e2;
+    height: 46px;
+    padding: 8px 3px;
+    font: normal normal 600 15px/15px proxima;
+}*/
+.action.primary {
+    background-image: none;
+    background: #000000;
+    border: 1px solid #333;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Neutra";
+    font-weight: 700;
+    padding: 15px 23px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1024px), print{
+.widget + .widget {
+	margin-top: 0px!important;}
+}
+
+.fieldset > .field .addon .addbefore,
+.fieldset > .fields > .field .addon .addbefore,
+.fieldset > .field .addon .addafter,
+.fieldset > .fields > .field .addon .addafter {
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  font-family: Neutra;
+  font-size: 14px;
+  height: 48px;
+  line-height: 1.36363636;
+  padding: 0 15px;
+  vertical-align: baseline;
+  width: 100%;
+  box-sizing: border-box;
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+.widget + .widget {
+    margin-top: 0px;
+}
+.popular-categories-inner .categories-inner .card .card-title {
+    font-family: "NeutraText-DemiSC";
+}
+
+
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .mp-post-title,
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .mp-post-info {
+  margin-bottom: 20px;
+  font-family: "Neutra";
+}
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .mp-post-title a {
+  font-family: "Neutra";
+  font-weight: 900;
+}
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .mp-post-info,
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .post-short-description,
+.post-list-content .post-list-item .post-item-wraper-info .post-info-wraper .post-short-description p {
+  color: #717171;
+  letter-spacing: 0.14px;
+  font-family: "Neutra";
+  font-weight: 600;
+}
+
+.mp-blog-view .post-view .post-post_content p,
+.mp-blog-view .post-view .post-post_content h1,
+.mp-blog-view .post-view .post-post_content h2,
+.mp-blog-view .post-view .post-post_content h3,
+.mp-blog-view .post-view .post-post_content h4,
+.mp-blog-view .post-view .post-post_content h5,
+.mp-blog-view .post-view .post-post_content h6,
+.mp-blog-view .post-view .post-post_content span,
+.mp-blog-view .post-view .post-post_content strong {
+  font-family: "Neutra";
+}
+
+.blog-comment .default-cmt__content__cmt-content .default-cmt__content__cmt-content-list .cmt-row__cmt-content,
+.blog-comment .default-cmt__content__cmt-content .default-cmt__content__cmt-content-list .cmt-row__cmt-content p {
+  font-family: "Neutra";
+  font-weight: 600;
+  letter-spacing: 0.14px;
+  color: #717171;
+}
+
+.button#tech3_show_more {
+  padding: 5px;
+  background-color: #ffffff;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-top: 5px;
+  display: none;
+  color: #cc0000;
+  width: 100%;
+  text-align: center;
+	font: normal normal bold .7rem/1.2rem "Neutra";
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+}
+.section-block .product-row .block-top .left-content .block-heading {
+    font-family: "NeutraBoldSC";
+}
+.product-item-details .product-item-name .product-item-link {
+    font-family: "NeutraBoldSC" !important;
+}
+.product-item-details .product-info-stock-sku-info .sku strong {
+    font-family: 'proxima';
+}
+.product-info-stock-sku-info .value {
+    font-family: 'proxima';
+}
+
+.price-box .price-wrapper .price {
+    font: normal normal 900 20px/28px "NeutraTitling"!important;
+    color: #222;
+}
+.section-block .product-row .block-top .left-content .block-heading {
+    font-family: "NeutraBoldSC";
+}
+
+.non-log-view .actions-primary .primary span {
+    font-family: "NeutraBoldSC"!important;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.product-item .action.primary {
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: none;
+}
+.product-item .action.primary {
+    padding: 10px 16px;
+}
+.shipping-and-price .price-final_price .msrp-price .price-wrapper span {
+    /* font-family: 'proxima'; */
+    font: normal normal 900 20px/28px "Neutra";
+}
+.brand-content .heading {
+    font-family: "NeutraTitling";
+}
+
+.page-footer h4 {
+    /* font-size: 20px; */
+    font: normal normal 20px/28px "NeutraBoldSC";
+}
+.footer .footer-col-content li a {
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font: normal normal 400 14px/24px 'NeutraBookSC';
+}
+.footer .footer-col-content li p {
+    color: #ffffff;
+    font: normal normal 400 14px/24px 'NeutraBookSC';
+}
+.unlimited-adventure .heading {
+    font-family: "NeutraBoldSC";
+}
+.unlimited-adventure p {
+    font: normal normal normal 17px/35px 'proxima';
+    color: #fff;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.shipping-and-price .free-shipping {
+    margin-top: 10px;
+    color: #cc0000;
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 10px;
+    font-family: "NeutraText-DemiSC";
+}
+.button-box button span, .button-box #clearAll {
+    font-family: "NeutraTitling";
+}
+
+/****** Category Pages*******/
+.category-wrapper .page-title-wrapper .page-title {
+    font-size: 34px;
+	font-family: "NeutraBoldSC";
+}
+
+.filter-current-subtitle, .filter-options-title {
+    position: relative;
+    padding-right: 26px;
+    cursor: pointer;
+    font-family: "NeutraBoldSC";
+}
+	.filter-options-title {
+    font-family: "NeutraBoldSC";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0 0 12px;
+    word-break: break-all;
+    color: #ffffff;
+    background: linear-gradient(1800deg, #555, #000);
+    padding: 12px 10px;
+    border-bottom: 2px solid #cc0000;
+		border-radius: 20px 0 0 0;
+}
+
+.filter-options-item .custom-checkbox {
+    margin-bottom: 5px;
+    font-family: ProximaNovaCondReg;
+    font-weight: 800;
+}
+.filter-options-item .custom-checkbox .count {
+    margin-bottom: 5px;
+    font-family: ProximaNovaCondReg;
+    font-weight: 400;
+}
+
+.sorter select, .limiter select {
+    min-width: 60px;
+    border: none;
+    border: 1px solid #222;
+    height: 32px;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: "NeutraText-DemiSC";
+}
+
+.catalog-category-view #layer-product-list .total-results, .product-fitment-result #layer-product-list .total-results, .catalogsearch-result-index #layer-product-list .total-results {
+    text-align: right;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-family: "NeutraText-DemiSC";
+}
+
+.product-item-details .product-item-name .product-item-link {
+    font-family: "NeutraBoldSC";
+    line-height: 1.2em;
+}
+
+.shipping-and-price .price-final_price .msrp-price .price-wrapper span {
+    font-family: "NeutraBoldSC";
+}
+.price-box .price-wrapper .price {
+    /* font-family: "NeutraBoldSC"; */
+    font: normal normal 900 20px/28px "NeutraTitling"!important;
+    color: #222;
+}
+
+.product-item-details .product-info-stock-sku-info .sku strong {
+    font-family: 'proxima';
+	font-weight:700;
+	font-size: 13px;
+}
+.product-info-stock-sku-info .value {
+    font-family: 'proxima';
+	font-size: 13px;
+}
+.shipping-and-price .free-shipping{
+	margin-top: 10px;
+    color: #cc0000!important;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: "NeutraText-DemiSC";
+}
+	
+.product-info-stock-sku-info{  
+
+}
+.category-wrapper .page-title-wrapper {
+    text-align: left;
+    font-family: "NeutraTitling"!important;
+}
+
+li.authorization-link.not-login {
+    font: normal normal 900 14px/23px "NeutraTitling";
+}
+
+ 
+
+.catalog-product-view .page-title-wrapper .page-title span {
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-family: "NeutraBoldSC";
+}
+
+.product-info-main .product.attribute.sku strong, .product-info-main .product.attribute.category strong, .product-info-main .product.attribute.brand strong {
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'proxima';
+}
+
+.product-info-main .product.attribute.sku .value, .product-info-main .product.attribute.category .value, .product-info-main .product.attribute.brand .value {
+    color: #000000;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'proxima';
+}
+.catalog-product-view .product-info-main .price-box .price-label {
+    font-size: 15px !important;
+    font-weight: normal !important;
+    color: #707070 !important;
+    display: inline !important;
+    font-family: 'proxima'!important;
+}
+
+/******Product Page*******/
+.catalog-product-view .product-info-main .price-box .price-wrapper .price{
+	font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 900;
+	font-family: "NeutraTitling";
+}
+
+.detailed-tabs-ds .tabs-ds .tabs-ds-content .tab-ds-content h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    font-family: "NeutraTitling"!important;
+}
+
+.product.info.detailed {
+	color: #000000;
+	font-size: 18px;}
+
+
+.detailed-tabs-ds .tabs-ds .tabs-ds-content .tab-ds-content h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'proxima';
+    color: #000000;
+}
+
+.detailed-tabs-ds .tabs-ds .tabs-ds-nav li .menu-tab-ds
+{
+    border: 1px solid #000000;
+    padding: 15px 30px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #000000;
+    color: #ffffff;
+	font-family: "NeutraBoldSC"!important;
+}
+
+span.subcategory_name {
+    font: normal normal 600 20px/20px "NeutraBoldSC";
+}
+.detailed-tabs-ds .tabs-ds .tabs-ds-nav li .menu-tab-ds span {
+    font: normal normal 900 15px/15pt "NeutraTitling"!important;
+}
+.detailed-tabs-ds .tabs-ds .tabs-ds-nav li .menu-tab-ds {
+    border: 1px solid #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.terms_privacy_page p {
+    margin-top: 0rem;
+    margin-bottom: 0.95rem;
+    font-family: 'proxima'!important;
+}
+
+.terms_privacy_page ul > li, ol > li {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-family: 'proxima';
+}
+
+.distributors-request-content .dealership_request_content p {
+    color: #222222;
+    font: normal normal normal 18px/35px 'proxima';
+}
+
+.contact_page_info {
+    border: 2px solid #cc0000;
+    background-color: #efefef;
+    border-radius: 2px;
+    padding: 4em 2em;
+    text-align: center;
+    margin-top: 4em;
+    font-size: 18px;
+    line-height: 1.05;
+}
+
+.minicart-wrapper .action.showcart .counter.qty {
+    position: absolute;
+    left: 13px;
+    top: auto;
+    bottom: -2px;
+    color: #fff;
+    height: 17px;
+    line-height: 17px;
+    border-radius: 30px;
+    min-width: 17px;
+    text-align: center;
+    white-space: normal;
+    font-size: 12px;
+    font-weight: 400;
+    vertical-align: top;
+    padding: 0 5px;
+    letter-spacing: 0.05em;
+    background-color: #cc0000;
+}
+.my-basket {
+    font-size: 20px;
+    font-family: 'NeutraText-DemiSC';
+}
+
+.cart.table-wrapper .cart-item-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'NeutraText-DemiSC';
+}
+
+.cart-summary > .title {
+    padding: 20px 22px;
+    font-size: 20px;
+    font-family: 'NeutraText-DemiSC';
+}
+
+.cart-totals .table-wrapper {
+    margin-bottom: 0;
+    overflow: inherit;
+    font-family: 'NeutraText-DemiSC';
+}
+
+.table:not(.cart):not(.totals) {
+    border: none;
+    font-family: 'proxima';
+}
+
+.minicart-items .product-item-name {
+    font: normal normal 900 14px/18px 'NeutraTitling';
+    text-transform: uppercase;
+}
+.arrow-steps .step span {
+    position: relative;
+    font-family: "NeutraBookSC"!important;
+	letter-spacing: .1em;
+}
+
+.catalog-product-view .product-add-form .delivery {
+    width: 100%;
+    color: #cc0000;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 10px;
+    display: inline-block;
+    font: normal normal 600 16px/1.4em 'NeutraBookSC';
+}
+/******Checkout Pages****/
+.checkout-cart-index .arrow-steps .step.current span {
+    font-family: "NeutraBookSC"!important;
+}
+.arrow-steps .step._active {
+    color: #FFFFFF;
+    background-color: #c00 !important;
+    font-weight: 500;
+}
+.checkout-cart-index .arrow-steps .step.current {
+    color: #ffffff;
+    background-color: #c00!important;
+    font-weight: 600;
+    font-family: "NeutraBookSC"!important;
+}
+.checkout-cart-index .arrow-steps .step.current:after {
+    border-left: 17px solid #c00!important;
+}
+
+table.data.table.totals
+.arrow-steps .step span {
+    position: relative;
+    font-family: "NeutraBookSC"!important;
+}
+
+.form-cart .cart.table-wrapper .my-basket h4.mybasket{
+	    font-size: 20px;
+    color: #ffffff;
+    font-family: "NeutraBoldSC"!important;
+	
+}
+
+.cart-summary > .title {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.17647059;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background: #000000;
+    font-family: "NeutraBoldSC"!important;
+}
+
+.form-cart .item-info .product-name .product-item-name a {
+    font: normal normal 700 18px/23px "NeutraTitling" !important;
+    text-transform: uppercase;
+}
+
+.price-including-tax, .price-excluding-tax span {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: "NeutraTitling" !important;
+}
+
+.cart-container .checkout-methods-items .item button.action.primary.shop-more span{
+	font-family: "NeutraTitling" !important;
+	
+}
+.cart-container .checkout-methods-items .item button.action.primary.shop-more:hover {
+    background: #c00;
+    border: 1px solid #c00;
+    color: #ffffff;
+    transition: .3 ease;
+}
+.detailed-tabs-ds .tabs-ds .tabs-ds-nav li .menu-tab-ds:hover {
+    background-color: #cc0000;
+    transition: .3s ease;
+    border: 1px solid #ee0000;
+}
+.cart-container .checkout-methods-items .action.primary.guest-checkout span {
+    font-family: "NeutraTitling" !important;
+}
+
+.cart-container .checkout-methods-items .action.primary span {
+    font-family: "NeutraTitling" !important;
+}
+
+.amount span.price {
+    /* font-family: "NeutraTitling" !important; */
+    font-family: "NeutraTitling" !important;
+}
+
+.checkout-shipping-address .shipping-header .step-title {
+    border-bottom: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 0;
+    font-family: "NeutraTitling" !important;
+}
+.opc-block-summary > .title {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    font-family: "NeutraTitling" !important;
+}
+.opc-block-summary > .title {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+    font-family: 'proxima';
+}
+
+.header.content.container-wide .logo .logo img {
+    display: block;
+    width: 193px;
+    aspect-ratio: auto 193 / 60;
+    height: 60px;
+}
+.header.content{
+	padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #cc0000;
+}
+.logo, .logo img {
+    display: block;
+    aspect-ratio: auto 193 / 60;
+
+}
+
+.opc-block-summary .table-totals .grand .mark, .opc-block-summary .table-totals .grand .amount, .opc-block-summary .table-totals .amount, .opc-block-summary .table-totals .mark {
+    padding: 15px 10px;
+    font-weight: 600;
+    font-family: "NeutraBoldSC" !important;
+}
+
+ .opc-block-summary .table-totals .mark span {
+    padding: 15px 10px;
+    font-weight: 600;
+    font-family: "NeutraBoldSC" !important;
+}
+
+.totals .amount span.price {
+    font-family: "NeutraBoldSC" !important;
+}
+
+.details-qty .label span {
+    font-family: "NeutraBookSC" !important;
+}
+.details-qty .label:after {
+    font-family: "NeutraBookSC" !important;
+}
+.opc-block-summary .product-item .price {
+    font-weight: bold !important;
+    font-family: "NeutraBoldSC" !important;
+}
+
+.checkout-shipping-method .step-title {
+    font-size: 18px;
+    font-family: "NeutraTitling" !important;
+}
+
+.checkout-cart-index .amrelated-grid-wrapper .block-title strong {
+    font-size: 26px;
+    font-family: "NeutraTitling";
+}
+
+.products-grid .product-item-name .product-item-link {
+    overflow: hidden;
+    display: block;
+    max-height: 65px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font: normal normal 16px/20px "Neutra";
+    height: 100px;
+    color: #000;
+}
+.billing-address-details span, a {
+    font-family: 'proxima';
+    text-transform: capitalize!important;
+}
+
+li.level1 span {
+    font-size: 12px !important;
+}
+
+.cart-container .checkout-methods-items .action.primary.guest-checkout:hover {
+    background: #cc0000;
+    border: 1px solid #cc0000;
+    color: #ffffff;
+}
+
+.opc-wrapper .step-title, .opc-block-shipping-information .shipping-information-title, .opc-block-summary > .title, .checkout-agreements-items .checkout-agreements-item-title {
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    font-family: "NeutraTitling" !important;
+}
+.arrow-steps .step._active:after {
+    border-left: 17px solid #cc0000;
+}
+
+.catalog-product-view .section h2{
+	
+}
+/***Locator***/
+.dealer-links h4 {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #cc0000;
+    font-size: 16px;
+}
+.dealer-items .dealer-item .dealer-item-box {
+    height: 55px;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.online-dealer h3 {
+    text-transform: uppercase;
+    font-family: "NeutraTitling" !important;
+    letter-spacing: -.02em;
+    font-size: 24px;
+}
+
+.__affirm-logo.__ligature__affirm_full_logo__ {
+    font-size: 1.35em!important;
+}
+ 
+.__affirm-logo.__affirm-logo-primary, .__affirm-logo.__affirm-logo-blue {
+    color: #222222;
+}

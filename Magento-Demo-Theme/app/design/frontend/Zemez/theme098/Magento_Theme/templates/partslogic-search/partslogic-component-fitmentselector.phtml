@@ -1,0 +1,42 @@
+
+			<script type="text/javascript">
+			require(["react","react-dom","PartslogicUi"],function(React, ReactDOM, PartslogicUi) {
+		
+				window.React = React
+				window.ReactDOM = ReactDOM
+				window.PartslogicUi = PartslogicUi
+
+				window.PartslogicUi.config({
+				   API_KEY: 'API_KEY',
+				  });
+				const fitmentContainer = document.querySelector("#pl-fitment-selector-container");
+
+				window.ReactDOM.render(
+				  window.React.createElement(PartslogicUi.WsmFitmentSelectorWrapper, {
+					styled: true,
+					groupId: 'GROUP_ID',
+					orientation: "horizontal", 
+					onSubmit: function (data) {
+					  window.location.href = `/search-pl?fitment=${encodeURIComponent(data)}`
+					},
+				  }),
+				  fitmentContainer
+				);	
+
+			});
+			</script>
+
+<!-- Optional CSS to make adjustments on the specific page. The example below is hiding some UI elements on the page -->
+<style>
+
+	.header-info{
+	    display:none;
+	}
+	.page-wrapper{
+	    padding-top:0px !important;
+	    min-height: 44%;
+	    
+	}
+
+
+</style>

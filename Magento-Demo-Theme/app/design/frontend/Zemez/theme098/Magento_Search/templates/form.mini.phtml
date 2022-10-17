@@ -1,0 +1,39 @@
+<?php
+/**
+ * PartsLogic Search Bar Component
+ * Original file in same directory w/ original search bar code: form.mini_Org_9-16-2022.phtml
+ */
+?>
+
+<div class="block-search" id="partslogic-search">
+	<div id="pl-searchbar-container"></div>
+	<script type="text/javascript">
+		require(["react","react-dom","PartslogicUi"],function(React, ReactDOM, PartslogicUi) {
+
+			window.React = React
+			window.ReactDOM = ReactDOM
+			window.PartslogicUi = PartslogicUi
+
+			window.PartslogicUi.config({
+				API_KEY: 'API_KEY',
+			  });
+			const searchBarContainer = document.querySelector('#pl-searchbar-container');
+			const SearchBar = window.PartslogicUi.WsmSearchBarWithWrapperModal;
+			function onSubmit(data) {
+				let params = new URLSearchParams();
+				params.set('q', data);
+				window.location.href = `${
+				  window.location.origin
+				}/search-pl?${params.toString()}`;
+			}
+
+			window.ReactDOM.render(
+				window.React.createElement(SearchBar, {
+				  onSubmit: onSubmit,
+				}),
+				searchBarContainer
+			);
+
+		});
+	</script>
+</div>

@@ -1,0 +1,45 @@
+<script type="text/javascript">
+require(["react","react-dom","PartslogicUi"],function(React, ReactDOM, PartslogicUi) {
+		window.React = React
+		window.ReactDOM = ReactDOM
+		window.PartslogicUi = PartslogicUi
+		
+		window.PartslogicUi.config({
+		  API_KEY: 'API_KEY',
+		});
+		/* The element ID to render the PL Search Page  componenet */
+		const searchPageContainer = document.querySelector(
+		  '#pl-search-page-container'
+		);               
+
+		const SearchPage = window.PartslogicUi.WsmSearchPage;
+
+		window.ReactDOM.render(
+		  window.React.createElement(SearchPage,{groupId: 'GROUP_ID' }),
+		  searchPageContainer
+		);
+	  
+});
+</script>
+<!-- Optional CSS to make adjustments on the specific page. The example below is hiding some UI elements on the page -->
+<style>
+	h1.page-title,
+	.page-top .breadcrumbs {display:none;}
+	.header-info{
+	    display:none;
+	}
+	.page-wrapper{
+	    padding-top:0px !important;
+	    
+	}
+	:root {
+    --pl-color-primary: #ff3f38;
+    --pl-color-secondary: #ffd520;
+    --pl-color-dark: #333;
+    --pl-color-light: #eeeeee;
+    --pl-color-success: #84d384;
+}
+
+/* ************************** CLIENT SPECIFIC STYLING ****************************************** */
+
+</style>

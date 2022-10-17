@@ -1,0 +1,150 @@
+/*********************************
+** PARTS CSS STYLING - SEPT 2022
+** Authored by: RJ support@partslogic.com
+*********************************/
+/* ADJUST COLORS */
+:root {
+    --pl-color-primary: #ff3f38;
+    --pl-color-secondary: #ffd520;
+    --pl-color-dark: #333;
+    --pl-color-light: #eeeeee;
+    --pl-color-success: #84d384;
+}
+
+/* ************************** CLIENT SPECIFIC STYLING ****************************************** */
+
+/*Facet Management */
+ul[class*="facetFilter_list"] {display:flex;flex-direction:column}
+ul[class*="facetFilter_list"] li.Sui-facet-section--categories {display:none}
+ul[class*="facetFilter_list"] li.Sui-facet-section--Department {order:-100}
+ul[class*="facetFilter_list"] li.Sui-facet-section--brands {order:-90}
+ul[class*="facetFilter_list"] li.Sui-facet-section--Category {order:-80}
+ul[class*="facetFilter_list"] li.Sui-facet-section--Subcategory {order:-70}
+ul[class*="facetFilter_list"] li.Sui-facet-section--Part.Type {order:-70}
+ul[class*="facetFilter_list"] label.Sui-FacetSection-checkbox-label {padding:0;margin: 0;}
+
+/* ************************** END CLIENT SPECIFIC STYLING ************************************** */
+
+div[class*="searchBar_inputContainerStyled"] {border:none;-webkit-box-shadow:none;box-shadow:none;}
+input#sui-search-bar-input {margin:0 !important;border-radius: 3px 0 0 3px;border: 1px solid #909090;}
+button.Sui-SearchBar--search-button {border-radius:0 3px 3px 0;}
+input#sui-search-bar-input,
+button.Sui-SearchBar--search-button {height:initial;font-size:1.4rem;padding:10px;}
+.SuiButton.primary { background-color:var(--pl-color-primary)}
+div[class*="searchBar_styledFitmentContainer"]{background-color:var(--pl-color-secondary);}
+[class*="Sui-ProductListItem--image"] img {max-height:150px !important;}
+.Sui-modal input#sui-search-bar-input {border:none;}
+div[class*="searchBar_styledFitmentContainer"] {background-color:var(--pl-color-dark)} 
+
+/*Search Results Page*/
+.Sui-modal .Pl-facet-modal--done-btn {background:var(--pl-color-primary);border:1px solid #00000073;}
+#pl-search-page-container div[class*="searchPage-module_fitmentVerifier"] button {margin:0 5px 0 0;border: 1px solid rgba(255,255,255, .5);font-size:1.3rem;text-transform:uppercase;border-radius: 3px;background-color: rgba(0,0,0,.5);}
+.Sui-modal .Sui-FitmentSelector--actions .Sui-FitmentSelector--clearBtn, .Sui-modal .Sui-FitmentSelector--actions button.Sui-FitmentSelector--searchBtn {height: auto;}
+#pl-search-page-container button[class*="searchPage-module_fitmentButton"],
+.Sui-modal .Sui-FitmentSelector--actions button.Sui-FitmentSelector--searchBtn {background-color:var(--pl-color-primary);border-color: transparent;height: auto;}
+#pl-search-page-container [class*="searchPage-module_fitmentVerifier"] .Sui-Alert--text {font-size:2rem;}
+#pl-search-page-container [class*="searchPage-module_fitmentVerifier"] .Sui-Alert--text:before {content:"";font-family:"font awesome 5 free";font-weight:normal;margin-right:5px}
+#pl-search-page-container button.Pl-filter-results--button {background-color:grey;color:white;border-color:rgba(0,0,0,.5)}
+#pl-search-page-container button[class*="searchPage-module_fitmentButton"] {background-color:var(--pl-color-primary);border:1px solid rgba(0,0,0,.25);color: #fff;}
+#pl-search-page-container .Sui-ListControls--container {font-size:1.5rem;border-radius:3px;background-color:var(--pl-color-light)}
+#pl-search-page-container .Sui-ListControls--container button {font-size:2rem;margin-left:20px}
+#pl-search-page-container .Sui-ListControls--container button>svg {color:#8e8e8e}
+#pl-search-page-container .Sui-ListControls--container button>svg[class*="listControls_selected"] {color:var(--pl-color-primary)}
+#pl-search-page-container li[class*="Sui-facet-section"], .Sui-modal li[class*="Sui-facet-section"] {border-radius:3px;}
+#pl-search-page-container li[class*="Sui-facet-section"] h2, .Sui-modal li[class*="Sui-facet-section"] h2 {background-color:var(--pl-color-light);line-height: initial;-webkit-box-align: center;-ms-flex-align: center;align-items: center;}
+#pl-search-page-container li[class*="Sui-facet-section"] button[class*="facetSection_showMoreBtn"], .Sui-modal li[class*="Sui-facet-section"] button[class*="facetSection_showMoreBtn"] {color:black;background-color:var(--pl-color-secondary);font-size:0.9rem;border-radius: 0px;text-transform:uppercase;float: none;width: 100%}
+#pl-search-page-container .Sui-FacetSection-count, .Sui-modal .Sui-FacetSection-count {font-size:1.2rem}
+.Sui-ProductListItem-Container--price-label-from {text-transform:uppercase;font-size:1rem;background-color:var(--pl-color-light);padding:5px;border-radius:3px;}
+.Sui-FacetSection-count {display:none;}
+/*Search Bar & Dropdown */
+.Sui-modal button.Sui-SearchBar--search-button {background-color:var(--pl-color-primary);border-radius:0 5px 5px 0;}
+button[class*="searchBarSuggestions_styledViewMoreBtn"]{font-size:1.75rem; padding:10px;height:initial;background-color:var(--pl-color-primary) !important;}
+
+
+/* Fitment Selector */
+#pl-fitment-wrapper {padding:10px}
+#pl-fitment-wrapper select, #pl-fitment-wrapper button {height: 50px;font-size:16px;padding: 10px;margin:0;-webkit-box-shadow: none;box-shadow: none;max-height: initial;margin:0 0 15px 0 ;}
+#pl-fitment-wrapper select {width:100%;border: 1px solid rgba(0,0,0,.5);background-color: #fff;border-radius: 0;background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22black%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");}
+#pl-fitment-wrapper .Sui-FitmentSelector--actions {display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-ms-flex-direction: row;flex-direction: row;gap: 35px;}
+#pl-fitment-wrapper .Sui-FitmentSelector--actions button {width:100%}
+#pl-fitment-wrapper .Sui-FitmentSelector--actions button.Sui-FitmentSelector--clearBtn {background-color: var(--pl-color-dark);color: rgba(255,255,255,1);border: 1px solid rgb(255 255 255 / 55%);}
+#pl-fitment-wrapper .Sui-FitmentSelector--actions button.Sui-FitmentSelector--clearBtn {-webkit-box-ordinal-group:0;-ms-flex-order:-1;order:-1}
+
+/* Fitment Selected Message */
+#pl-search-page-container [class*="searchPage-module_fitmentVerifier"] {background-color: var(--pl-color-primary);border-color:rgba(0,0,0,.5);}
+@media (max-width:768px){
+  #pl-search-page-container [class*="searchPage-module_fitmentVerifier"] {display:flex;flex-direction:column;text-align:center;padding:5px}
+    #pl-search-page-container [class*="searchPage-module_fitmentVerifier"] button {width:100%;margin:0 !important}
+}
+
+/* Fitment Verifier */
+#pl-fitment-verifier {width:100%;margin:10px 0 15px 0;clear:both;}
+#pl-fitment-verifier .Sui-FitmentSelectorVerifier--title {background-color:var(--pl-color-dark);}
+#pl-fitment-verifier .Sui-FitmentSelector--actions {display:flex;flex-direction: row;justify-content: space-between;}
+#pl-fitment-verifier .Sui-FitmentSelector--actions button {height:40px;}
+#pl-fitment-verifier .Sui-FitmentSelector--searchBtn {background:var(--pl-color-primary);}
+#pl-fitment-verifier .Sui-FitmentSelector--clearBtn {order:-1}
+
+/* Fitment Labels */
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.fitmentSpecific,
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.universal {font-size:1rem;border-radius:5px}
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.fitmentSpecific {background:var(--pl-color-secondary)}
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability.universal {}
+
+
+/* NO SEARCH MESSAGE */
+.Pl-SearchPage-no-query-message,
+[class*="searchPage-module_noResultMsg"] {font-size:1.8rem;background-color: #f9af3f;padding:1rem;text-align:center;line-height:initial;}
+
+/* All Devices */
+.Sui-modal .Sui-Modal--root {z-index: 10000000;}
+.pl-searchbar-container form, 
+.pl-searchbar-container input,
+.pl-searchbar-container .Sui-SearchBar--search-button {margin:0;border-radius: 0;top: 0%;-webkit-transform: initial;-ms-transform: initial;transform: initial;/* height: 35px; */line-height: initial;}
+.Sui-SearchBar--search-button {/* font-size:2rem; */}
+.SuiButton, button.SuiButton, #pl-search-page-container button, .Sui-modal button {padding: 10px;height: initial;}
+
+/*HIDE ELEMENTS: Product List */
+.Sui-ProductListItem-Container--stockid {/* display:none; */}
+
+/* FACET SEARCH: Mobile */
+div[class*="facetFilterModal-module_modalHeader"] {}
+div[class*="facetFilterModal-module_modalFacetContainer"] {/* padding:15px 10px */}
+.Pl-facet-modal--title, .Pl-Fitment-modal--title {margin: 0 !important;}
+
+/*FACET PANELS*/
+ul[class*="facetFilter_list"] {display: flex;flex-direction: column}
+.Sui-FacetSection--container button[class*="facetSection_showMoreBtn"] {font-size:1.3rem; text-decoration:none;}
+.Sui-FacetFilter--expand-collapse-btn {padding:0 1rem;font-size:.5rem}
+
+/* SEARCH RESULTS - PRODUCT LIST */
+.Sui-ProductListItem--brand_name,
+.Sui-ProductListItem--tag {font-size:1.2rem !important}
+.Sui-ProductListItem-Container--tag .Sui-ProductListItem--tag {font-weight: initial;font-style: italic;}
+[class*="productList_styled"] .Sui-ProductListItem-Container--availability_remarks p {font-size:1.1rem;}
+.Sui-ProductListItem--dealerid, .Sui-ProductListItem--stockid {font-size:1.2rem; font-weight:700;}
+.Sui-Modal--close-icon {top: -49px;right:-10px;}
+.Sui-modal .Sui-Modal--root[class*="fitmentSelectorModal-module_modal"] .Sui-Modal--close-icon{top:initial;right:10px;}
+.Sui-ProductListItem--root .Sui-ProductListItem--image {align-items:flex-start;}
+.Sui-ProductListItem-Container--fitment_applicability span.Sui-ProductListItem--fitment_applicability {font-size:1.1rem;border-radius:3px}
+
+/* SEARCH MODAL PRODUCT LIST */
+.Sui-SearchBar--suggestions-container>div {width:100% !important;}
+.Sui-ProductListItem--root {border-color:#ccc}
+.Sui-ProductListItem--root ul li {margin:0;padding:0;}
+.Sui-modal .Sui-CategoryList--title {text-align:center}
+.Sui-modal .Sui-ProductListItem--root {border-width:0 0 1px 0;}
+
+
+/*Options Button*/
+a.Sui-ProductListItem--has_options {background-color: var(--sui-muted-color);color:white;text-decoration: none;text-transform:capitalize;}
+.Sui-ProductListItem-Container--has_options {margin:10px 0 !important;}
+.Sui-SearchBar--suggestions-container .Sui-ProductListItem-Container--has_options div[class*="productListItem_optionAvailableBtnContainer"]  {text-align:left; margin-top:10px;}
+.Sui-SearchBar--suggestions-container .Sui-ProductListItem-Container--has_options div[class*="productListItem_optionAvailableBtnContainer"]  a {font-size:1.2rem}
+
+/*Pagination*/
+.Sui-PaginationWithRange--container {margin: 10px 0}
+.Sui-PaginationWithRange--container>div {margin-bottom: 10px;display: flex;justify-content: space-around;align-items: center;gap: 5px;}
+.Sui-PaginationWithRange--container button {font-size: 1.5rem;background-color: var(-pl-color-secondary);border-radius: 3px;}
+.Sui-PaginationWithRange--container button[disabled] {background-color: initial}
+.Sui-PaginationWithRange--container button[disabled][class*=pagination_active] {background-color: var(--pl-color-primary);color: #fff;text-decoration: none;}
